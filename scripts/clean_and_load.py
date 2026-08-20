@@ -14,3 +14,5 @@ engine = create_engine(db_url)
 # Test the connection
 with engine.connect() as connection:
     print("Successfully connected to the SQL database!")
+
+print("hello world")
