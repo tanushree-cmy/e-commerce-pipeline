@@ -42,5 +42,7 @@ elif page == "Run Production Pipeline":
     st.subheader("Pipeline Controls")
     if st.button("Execute Pipeline Batch"):
         st.info("Running pipeline scripts...")
-        # Pipeline execution logic goes here
+        import subprocess
+
+        subprocess.run(["python", "scripts/clean_and_load.py"])
         st.success("Pipeline executed successfully!")
